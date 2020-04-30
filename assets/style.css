@@ -1,0 +1,137 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+}
+
+.container {
+    width: calc(100%-2em);
+    margin: 0 auto;
+    padding: 1em;
+    min-height: calc(100vh-2em);
+}
+
+.line-chart-container, .input-div-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.graph-container {
+    width: 100%;
+    margin: 1em auto;
+}
+
+.input-container {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.dropdown-container {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+}
+#rooms-dropdown {
+    width: 100%;
+    margin: 0 .5em;
+    z-index: 11111111111;
+}
+
+.radio-container{
+    width: 30%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#rooms-radios {
+    margin: .5em auto;
+}
+
+.date-container {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+}
+#date-picker {
+    width: 100%;
+    margin: .5em;
+    z-index: 1111111111;
+}
+
+.input-container h3 {
+
+    margin-left: 1em;
+}
+
+.spore-charts-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.boxplot-container {
+    width: 49%;
+    margin: 0;
+}
+
+.pie-chart-container {
+    width: 49%;
+    margin: 0;
+}
+
+
+.dt-container {
+    width: 100%;
+    margin: 1em auto;
+    padding: 0;
+    overflow: auto;
+}
+#spore-table {
+    width: 100%;
+    margin: 0;
+}
+
+@media screen and (max-width:1160px) {
+    .spore-charts-container {
+    width:100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+    }
+
+    .boxplot-container, .pie-chart-container {
+        width: 100%;
+        margin: 1em auto;
+    }
+
+    .dash-spreadsheet.dash-freeze-left {
+        max-width: 5000px;
+    }
+
+    .dash-spreadsheet-container, .dash-spreadsheet-inner, .dash-spreadsheet, .dash-freeze-top, .dash-freeze-left, .dash-fill-width {
+        max-width: 5000px;
+    }
+
+}
+
+
+.dash-spreadsheet.dash-freeze-left {
+    max-width: 5000px;
+}
+
+
+.dash-spreadsheet-container, .dash-spreadsheet-inner, .dash-spreadsheet, .dash-freeze-top, .dash-freeze-left, .dash-fill-width {
+    max-width: 5000px !important;
+}
